@@ -20,7 +20,7 @@ export interface IApplyPropertiesAction {
 export type IWebpartAction = IUpdatePropertyAction | IApplyPropertiesAction
 
 export const initialState: IWebpartState = {
-  properties: { name: '' }
+  properties: { name: '', endpoint: '' }
 };
 
 export default (state = initialState, action: IWebpartAction) => {
